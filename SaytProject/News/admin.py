@@ -4,6 +4,5 @@ from .models import *
 # Register your models here.
 admin.site.register(Novosti)
 admin.site.register(Document)
-
 admin.site.register(Opisanie)
 admin.site.register(Dobavlenie)
