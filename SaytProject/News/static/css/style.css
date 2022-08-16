@@ -1,7 +1,7 @@
 /*Стиль верхнего меню*/
 .nav ul {
     display:none;
-    background-color: rgb(50, 49, 49);
+    background-color: rgb(50, 49, 48);
     position:absolute;
     top: 100%;
 
