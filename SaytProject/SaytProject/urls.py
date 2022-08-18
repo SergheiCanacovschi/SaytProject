@@ -17,9 +17,11 @@ from django.contrib import admin
 from django.urls import path, re_path
 from News import views
 
+
 urlpatterns = [
     path('', views.index, name='index'),
     path('admin/', admin.site.urls),
-    re_path(r'^books/$', views.BookListView.as_view(), name='document'),
-    re_path(r'^book/(?P<pk>\d+)$', views.BookDetailView.as_view(), name='doc-detail'),
+    path('passport',views.passport, name='passport'),
+ #   re_path(r'^books/$', views.BookListView.as_view(), name='document'),
+ #   re_path(r'^book/(?P<pk>\d+)$', views.BookDetailView.as_view(), name='doc-detail'),
 ]

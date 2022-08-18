@@ -22,9 +22,11 @@ def index(request):
     }
                  )
 
-class BookListView(generic.ListView):
-    model = Document
-    paginate_by = 5
+def passport(request):
 
-class BookDetailView(generic.DetailView):
-    model = Document 
+    return render(request,"/pages/passport.html",context={
+    }
+    )
+
+
+   
