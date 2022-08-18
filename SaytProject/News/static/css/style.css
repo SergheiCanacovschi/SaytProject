@@ -53,14 +53,14 @@ margin-bottom:-4px;
   .nav ul li { float: none; width: 190px;}
   .nav li:hover {background-color: black;}
   .nav ul li:hover { background-color: rgb(202, 54, 54);}
-  .nazv h1{
+  .container-fluid h1{
     text-align: center;
     display: inline-block;
     font-size: 35px;
     vertical-align: middle;
     margin-left: 185px;
                   }
-  .nazv img{
+ .container-fluid img{
     margin-left: 170px;
 
       }
@@ -115,11 +115,53 @@ margin-bottom:-4px;
   }
 
 p {
-  text-align: center;
-  font-size: small;
+  text-align: left;
+  font-size: medium;
   margin-top: 10px;
-  margin-bottom: -10px;
+  margin-bottom: 10px;
+}
+h1{
+  text-align: center;
+  
 }
 
 
 
+    
+.col-sm-9 {
+  padding: 45px;
+}
+.col-sm-3{
+  padding-top: 45px;
+  padding-right: 1px;
+}
+
+
+figure img{
+  width: 100%;
+}
+form {
+  width:100%;
+  margin-right: 10px;
+  margin-top: 250px;
+  }
+  input{
+  padding:4px 10px;
+  border:0;
+  font-size:16px;
+  }
+  .search {
+  width: 60%;
+  border: 1px solid black;
+  height: 31px;
+  
+  }
+  .submit{
+  width: 20%;
+  background-color: #bc1010;
+  color:white;
+  font-size: 16px;
+      }
+      .row{
+        padding: 0px;
+      }
