@@ -7,6 +7,9 @@ class Novosti(models.Model):
      data = models.DateField(max_length=30,
                             help_text="Введите дату публицакий ",
                             verbose_name="Дата публикация")
+     vremea = models.TimeField(max_length=30,
+                            help_text="Введите время публицакий ",
+                            verbose_name="Время публикация")
      persona = models.CharField(max_length=60,
                             help_text="Введите атвора публикаций ",
                             verbose_name="Автор Публикаций")
@@ -25,6 +28,9 @@ class Document(models.Model):
     data = models.DateField(max_length=30,
                             help_text="Введите дату публицакий ",
                             verbose_name="Дата публикация")
+    vremea = models.TimeField(max_length=30,
+                            help_text="Введите время публицакий ",
+                            verbose_name="Время публикация")
     last_name = models.CharField(max_length=50,
                             help_text="Введите атвора публикаций",
                             verbose_name="Автор Публикаций")

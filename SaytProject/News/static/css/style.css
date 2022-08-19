@@ -143,7 +143,11 @@ figure img{
 form {
   width:100%;
   margin-right: 10px;
+<<<<<<< HEAD
   margin-top: 2px;
+=======
+  margin-top: 25px;
+>>>>>>> 38600959bf1061f042efa96f60a26dc530928470
   }
   input{
   padding:4px 10px;
