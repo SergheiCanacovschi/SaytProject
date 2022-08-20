@@ -131,9 +131,10 @@ h1{
 .col-sm-9 {
   padding: 45px;
 }
-.col-sm-3{
-  padding-top: 45px;
-  padding-right: 1px;
+.col-sm-3 img{
+  display: inline-block;
+  max-width: 110%;
+  
 }
 
 
@@ -147,7 +148,7 @@ form {
 
   }
   input{
-  padding:4px 10px;
+  padding:4px 1px;
   border:0;
   font-size:16px;
   }
@@ -169,3 +170,18 @@ form {
       .foot1 p{
         text-align: center;
       }
+      #m-booked-weather-bl250-4792{
+        margin-top: 25px;
+        border: 1px solid black;
+      }
+      .pogoda p{
+        text-align: left;
+        font-size: larger;       
+     }
+     .val {
+      max-width: 250px;
+      border: 1px solid black;
+      min-width: 100px;
+      display:inline-flex;
+    }
+     

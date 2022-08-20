@@ -24,7 +24,7 @@ def index(request):
 
 def passport(request):
 
-    return render(request,"/pages/passport.html",context={
+    return render(request,"./pages/passport.html",context={
     }
     )
 
