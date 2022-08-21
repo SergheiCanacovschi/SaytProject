@@ -100,6 +100,7 @@ margin-bottom:-4px;
 
   .footer-dark .item.text {
     margin-bottom:5px;
+    padding-right: 25px;
   }
   
 
@@ -125,17 +126,30 @@ h1{
   
 }
 
+.val{
+width: 250px;
+}
 
-
+@media (max-width:998px) {
+  .val {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}
+  
     
 .col-sm-9 {
   padding: 45px;
 }
 .col-sm-3 img{
   display: inline-block;
-  max-width: 110%;
-  
-}
+  max-width: 100%;
+  }
+  .col-sm-3{
+    margin-right: 0;
+    padding-right: 0;
+  }
 
 
 figure img{
@@ -145,27 +159,32 @@ form {
   width:100%;
   margin-right: 10px;
   margin-top: 25px;
+  padding-right: 2px;
 
   }
   input{
-  padding:4px 1px;
+  padding:4px ;
   border:0;
   font-size:16px;
   }
+  .submit{
+    
+    background-color: #bc1010;
+    color:white;
+    font-size: 16px;
+    padding-right: 2px;
+   
+        }
   .search {
-  width: 60%;
+  width: 55%;
   border: 1px solid black;
   height: 31px;
-  
+   
   }
-  .submit{
-  width: 20%;
-  background-color: #bc1010;
-  color:white;
-  font-size: 16px;
-      }
+  
       .row{
         padding: 0px;
+        --bs-gutter-x: 0;
       }
       .foot1 p{
         text-align: center;
@@ -178,10 +197,17 @@ form {
         text-align: left;
         font-size: larger;       
      }
-     .val {
-      max-width: 250px;
-      border: 1px solid black;
-      min-width: 100px;
-      display:inline-flex;
-    }
      
+    .simvol h2{
+     text-align: center;
+     color: #088f47;
+    }
+    .simvol{
+      border: 3px solid black;
+      border-radius: 0 10px;
+      padding: 12px;
+      margin-top: 90px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
