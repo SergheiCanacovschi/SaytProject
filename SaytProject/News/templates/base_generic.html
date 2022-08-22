@@ -4,43 +4,47 @@
     {% block title %}<title>Районный совет Тараклии</title>{% endblock %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.j"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.cs">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <!-- Добавление статического CSS файла -->
     {% load static %}
-                <link rel="stylesheet" href="../static/boots/css/bootstrap.css">
+                <link rel="stylesheet" href="{% static 'boots/css/bootstrap.css' %}">
+                <link rel="stylesheet" href="{% static 'css/style.css' %}">
+                <script src="{% static 'js/js.js' %}"></script>
                   {% block head %}
-                    <div class="container-fluid">
-                    <img src="{% static 'images/logotip.png' %}" style="height:150px;"  align="absmiddle">
-            <h1>Районный совет Тараклия</h1>
-            <a href="index.html"><img src="{% static 'images/gerb1.jpg' %}" style="height:150px;"  align="absmiddle">
-      </div>
+                    
+                   <div class="golova"> 
+            <a href="{% url 'index' %}"><img src="{% static 'images/TEST.jpg' %}" align="absmiddle">
+            </div>
     
     {% endblock %}
 </head>
 <body>
-    <div class="nav nav-justified">
-        <li class="nav-item"> <a class="nav-link.active" href="#">Главная</a> </li>
+    
+    <div class="navbar nav-justified">
+        
+              <li class="nav-item"> <a class="nav-link.active" href="{% url 'index' %}">Главная</a> </li>
         <li class="nav-item"> <a class="nav-link.active" href="#">Район Тараклия</a>
-            <ul class="nav-item">
+            <ul class="navbar-nav">
                 <li> <a class="nav-link.active" href="passport">Паспорт Района</a></li>
-                <li> <a class="nav-link.active" href="#">Символика</a></li>
+                <li> <a class="nav-link.active" href="simvol">Символика</a></li>
                 <li> <a class="nav-link.active" href="#">Примэрии</a></li>
-                <li> <a class="nav-link.active" href="#">Туризм</a></li>
-                <li> <a class="nav-link.active" href="#">Инвестиции</a></li>
+                <li> <a class="nav-link.active" href="http://tourism.raiontaraclia.md/" target="_inset">Туризм</a></li>
+                <li> <a class="nav-link.active" href="http://investin.raiontaraclia.md/" target="_inset">Инвестиции</a></li>
             </ul>
         </li>
         <li class="nav-item"><a class="nav-link.active" href="#">Новости</a>
-            <ul class="nav-item">
+            <ul class="navbar-nav">
                 <li><a class="nav-link.active" href="#">Объявления</a></li>
                 <li><a class="nav-link.active" href="#">COVID-19</a></li>
                 <li><a class="nav-link.active" href="#">Вакансии</a></li>
             </ul>
         </li>
         <li class="nav-item"><a class="nav-link.active" href="#">Районный совет</a>
-            <ul class="nav-item">
+            <ul class="navbar-nav">
                 <li><a class="nav-link.active" href="#">Председатель</a></li>
                 <li><a class="nav-link.active" href="#">Секретарь</a></li>
                 <li><a class="nav-link.active" href="#">Советники района</a></li>
@@ -48,7 +52,7 @@
             </ul>
         </li>
         <li class="nav-item"><a class="nav-link.active" href="#">Администрация</a>
-            <ul class="nav-item">
+            <ul class="navbar-nav">
                 <li><a class="nav-link.active" href="#">Руководство</a></li>
                 <li><a class="nav-link.active" href="#">Аппарат председателя</a></li>
                 <li><a class="nav-link.active" href="#">Децентрализованные службы</a></li>
@@ -56,7 +60,7 @@
             </ul>
         </li>
         <li class="nav-item"><a class="nav-link.active" href="#">Документы</a>
-            <ul class="nav-item">
+            <ul class="navbar-nav">
                 <li><a class="nav-link.active" href="#">Распоряжения</a></li>
                 <li> <a class="nav-link.active" href="#">Решение&nbspрайонного совета</a></li>
                 <li> <a class="nav-link.active" href="#">КЧС</a></li>
@@ -66,32 +70,44 @@
         </li>
         <li class="nav-item"><a class="nav-link.active" href="#">Контакты</a></li>
         <li class="nav-item"> <a class="nav-link.active" href="#">Язык</a>
-            <ul class="nav-item">
+            <ul class="navbar-nav">
                 <li> <a class="nav-link.active" href="#">Русский</a></li>
                 <li> <a class="nav-link.active" href="#">Български</a></li>
                 <li> <a class="nav-link.active" href="#">Română</a></li>
             </ul>
-        </li>
-    </div>
-
+            
+                </li>
+               
+    </div>   
     <div class="row">    
     <div class="col-sm-9">
     {% block content %}{% endblock %}
 </div>
 <div class="col-sm-3">
- <form> 
-    <input type="text" name=text" class="search" placeholder"Поиск...">
-    <input type="submit" name="submit" class="submit" value="Поиск &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ">
-  </form>
+ <div class="ban">
+    <form> 
+        <input type="text" name="text" class="search" placeholder ="Поиск...">
+        <input type="submit" name="submit" class="submit" value="Поиск  ">
+      </form>
+      <br>
+      <div class="pogoda"><p><strong> ПОЛЕЗНЫЕ ССЫЛКИ</strong></p></div>
+      <a href="https://gov.md/ru" target="_inset"><img src="../static/images/Guv RM.jpg" width="250" alt="" align="center"></a>
+      <a href="https://www.parlament.md" target="_inset"><img src="../static/images/Parl RM.jpg"  width="250" alt="" align="center"></a>
+      <a href="https://www.presedinte.md/rus" target="_inset"><img src="../static/images/Presedintia RM.jpg"  width="250" alt="" align="center"></a>
+      <a href="https://cancelaria.gov.md" target="_inset"><img src="../static/images/Cancelaria RM.jpg"  width="250" alt="" align="center"></a>
+      <a href="https://egov.md/ru" target="_inset"><img src="../static/images/Centrul de Guvernare Electronica.jpg"  width="250" alt="" align="center"></a>
+      <a href="https://actelocale.gov.md" target="_inset"><img src="../static/images/Registrul de Stat.jpg"  width="250" alt="" align="center"></a>
+      <a href="https://date.gov.md" target="_inset"><img src="../static/images/Portalul.jpg"  width="250" alt="" align="center"></a>
 
-  <a href="https://gov.md/ru" target="_inset"><img src="../static/images/Guv RM.jpg" height="120" alt="" align="center"></a>
-  <a href="https://www.parlament.md" target="_inset"><img src="../static/images/Parl RM.jpg" height="120" alt="" align="center"></a>
-  <a href="https://www.presedinte.md/rus" target="_inset"><img src="../static/images/Presedintia RM.jpg" height="120" alt="" align="center"></a>
-  <a href="https://cancelaria.gov.md" target="_inset"><img src="../static/images/Cancelaria RM.jpg" height="120" alt="" align="center"></a>
-  <a href="https://egov.md/ru" target="_inset"><img src="../static/images/Centrul de Guvernare Electronica.jpg" height="120" alt="" align="center"></a>
-  <a href="https://actelocale.gov.md" target="_inset"><img src="../static/images/Registrul de Stat.jpg" height="120" alt="" align="center"></a>
-  <a href="https://date.gov.md" target="_inset"><img src="../static/images/Portalul.jpg" height="120" alt="" align="center"></a>
- 
+    <br>
+    <div class="pogoda"><p><strong> ПОГОДА В ТАРАКЛИИ</strong></p></div>
+      <!-- weather widget start --><a target="_blank" href="https://nochi.com/weather/taraclia-139396"><img src="https://w.bookcdn.com/weather/picture/3_139396_1_20_137AE9_250_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=589&anc_id=12907"  alt="booked.net"/></a><!-- weather widget end -->
+     <br>
+     <div class="pogoda"><p><strong> КУРС ВАЛЮТ</strong></p></div>
+     <!-- НАЧАЛO СКРИПТ ИСТОЧНИК ВАЛЮТНОГО КУРСА v2.0 -->
+<div class="val"><script type="text/javascript" language="javascript" src="//cdn1.cursbnm.md/custom_widgets/get_widget.php?lw=responsive&rw=1&font=Trebuchet%20MS&cft=00b0ea&ctt=ffffff&ttb=0&cc=f2f2f2&cfb=ffffff&ct=000000&pd=4&pc=4&aiv=1&val[]=7&val[]=15&val[]=16&val[]=12&mf=14&avc=1&ac=1&aod=0&lang=ru"></script>
+<!-- КОНЕЦ СКРИПТ ИСТОЧНИК ВАЛЮТНОГО КУРСА v2.0--></div>
+        </div>
 </div>
 </div>
     {% block pagination %}
@@ -151,5 +167,5 @@
         </div>
         </div>        
     </footer>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
 </body>

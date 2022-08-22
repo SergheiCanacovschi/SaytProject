@@ -4,7 +4,7 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return ("Главная страница чайта Районный Савет")
+    return ("Главная страница сайта Районный Совет")
 
 from django.shortcuts import render
 from django.http import HttpResponse
@@ -24,9 +24,13 @@ def index(request):
 
 def passport(request):
 
-    return render(request,"/pages/passport.html",context={
+    return render(request,"./pages/passport.html",context={
     }
     )
+def simvol(request):
 
+    return render(request,"./pages/simvol.html",context={
+    }
+    )
 
    
