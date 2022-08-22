@@ -1,0 +1,126 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Деконцентрированные службы</h1>
+<br><br>
+<button class="accordion"><strong>Территориальный офис государственной канцелярии Тараклия</strong></button>
+<div class="panel">
+  <p><b>Руководитель:</b><br>
+    Михайлов Иван<br><br>
+    
+    
+    <b>График работы:</b><br>
+    Понедельник - Пятница: 8:00-17:00<br>
+    Обеденный перерыв: 12:00-13:00<br><br>
+    
+    
+   <b> Контакты:</b><br>
+    <b>тел.:</b> (0294)21-00-0  <br>     
+   <b> E-mail:</b> ivan.mihailov@gov.md<br><br>
+    
+  <b>  Адрес:</b><br>
+     г. Тараклия, ул. Карла Маркса,69</p>
+</div>
+<br>
+<button class="accordion"><strong>Инспекция охраны окружающей среды района Тараклия</strong></button>
+<div class="panel">
+  <p><b>Руководитель:</b><br>
+    Балтаков Андрей Александрович<br><br>
+    
+    
+   <b> График работы:</b><br>
+    Понедельник - Пятница: 8:00-17:00<br>
+    Обеденный перерыв: 12:00-13:00<br><br>
+    
+    
+   <b> Контакты:</b><br>
+   <b> тел.:</b> (0294)2-30-84   <br>      
+  <b>  E-mail:</b> ipmtaraclia@ipm.gov.md<br><br>
+    
+    
+   <b> Адрес:</b><br>
+    г.Тараклия,  ул. Мира,7</p>
+</div>
+<br>
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+<br>
+<button class="accordion">Section 2</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+<br>
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+<br>
+<button class="accordion">Section 2</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+<br>
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+<br>
+<button class="accordion">Section 2</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+<br>
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+<br>
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+<br>
+<button class="accordion">Section 2</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+<br>
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+<br>
+<button class="accordion">Section 2</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+<br>
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+<br>
+<button class="accordion">Section 2</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+<br>
+
+<script>var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight){
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }</script>
+
+{% endblock %}
