@@ -44,7 +44,7 @@ class Document(models.Model):
                                help_text="Описание Документа", verbose_name="Описание ")
     file = models.FileField(null=True, blank=True,
                                verbose_name="Вы можете прикрепить файл")    
-                               
+
 
 
     def __str__(self):
