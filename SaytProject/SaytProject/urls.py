@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, re_path
 from News import views
+from django.conf.urls.static import static
+from django.conf import settings
+
 
 
 urlpatterns = [
@@ -26,3 +29,5 @@ urlpatterns = [
  #   re_path(r'^books/$', views.BookListView.as_view(), name='document'),
  #   re_path(r'^book/(?P<pk>\d+)$', views.BookDetailView.as_view(), name='doc-detail'),
 ]
+
+
