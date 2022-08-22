@@ -18,6 +18,8 @@ class Novosti(models.Model):
                               verbose_name="Заголовок Новостей")
      summary = models.TextField(max_length=10000,
                                 help_text="Описание Новостей", verbose_name="Описание ")
+     file = models.FileField(null=True, blank=True,
+                               verbose_name="Вы можете прикрепить файл")
 
      def __str__(self):
          return self.title
@@ -40,6 +42,8 @@ class Document(models.Model):
                              verbose_name="Заголовок Документа")
     summary = models.TextField(max_length=10000,
                                help_text="Описание Документа", verbose_name="Описание ")
+    file = models.FileField(null=True, blank=True,
+                               verbose_name="Вы можете прикрепить файл")    
 
 
 
