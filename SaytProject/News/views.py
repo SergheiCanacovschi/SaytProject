@@ -34,5 +34,9 @@ def simvol(request):
     return render(request,"./pages/simvol.html",context={
     }
     )
+def prim(request):
 
+    return render(request,"./pages/prim.html",context={
+    }
+    )
    
