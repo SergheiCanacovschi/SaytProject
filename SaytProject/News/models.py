@@ -20,6 +20,8 @@ class Novosti(models.Model):
                                 help_text="Описание Новостей", verbose_name="Описание ")
      file = models.FileField(null=True, blank=True,
                                verbose_name="Вы можете прикрепить файл")
+     image = models.ImageField(null=True, blank=True,
+                               verbose_name="Вы можете прикрепить фото")
 
      def __str__(self):
          return self.title
@@ -44,6 +46,8 @@ class Document(models.Model):
                                help_text="Описание Документа", verbose_name="Описание ")
     file = models.FileField(null=True, blank=True,
                                verbose_name="Вы можете прикрепить файл")    
+    image = models.ImageField(null=True, blank=True,
+                               verbose_name="Вы можете прикрепить фото")
 
 
 
