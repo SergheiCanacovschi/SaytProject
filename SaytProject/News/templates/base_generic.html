@@ -58,7 +58,7 @@
                 <li><a class="nav-link.active" href="#">Руководство</a></li>
                 <li><a class="nav-link.active" href="#">Аппарат председателя</a></li>
                 <li><a class="nav-link.active" href="#">Децентрализованные службы</a></li>
-                <li><a class="nav-link.active" href="#">Деконцентрированные службы</a></li>
+                <li><a class="nav-link.active" href="decont">Деконцентрированные службы</a></li>
             </ul>
         </li>
         <li class="nav-item"><a class="nav-link.active" href="#">Документы</a>
@@ -81,18 +81,21 @@
                 </li>
                
     </div>   
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    
     <div class="row">    
     <div class="col-sm-9">
     {% block content %}{% endblock %}
 </div>
 <div class="col-sm-3">
+    
  <div class="ban">
+    
     <form> 
         <input type="text" name="text" class="search" placeholder ="Поиск...">
         <input type="submit" name="submit" class="submit" value="Поиск  ">
       </form>
       <br>
+     
       <div class="pogoda"><p><strong> ПОЛЕЗНЫЕ ССЫЛКИ</strong></p></div>
       <a href="https://gov.md/ru" target="_inset"><img src="../static/images/Guv RM.jpg" width="250" alt="" align="center"></a>
       <a href="https://www.parlament.md" target="_inset"><img src="../static/images/Parl RM.jpg"  width="250" alt="" align="center"></a>
@@ -113,6 +116,7 @@
         </div>
 </div>
 </div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">☝</button>
     {% block pagination %}
       {% if is_paginated %}
           <div class="pagination">

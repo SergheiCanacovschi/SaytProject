@@ -27,6 +27,7 @@ urlpatterns = [
     path('passport',views.passport, name='passport'),
     path('simvol',views.simvol, name='simvol'),
     path('prim',views.prim, name='prim'),
+    path('decont',views.decont, name='decont'),
  #   re_path(r'^books/$', views.BookListView.as_view(), name='document'),
  #   re_path(r'^book/(?P<pk>\d+)$', views.BookDetailView.as_view(), name='doc-detail'),
 ]

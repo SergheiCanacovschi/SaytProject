@@ -39,4 +39,8 @@ def prim(request):
     return render(request,"./pages/prim.html",context={
     }
     )
-   
+def decont(request):
+
+    return render(request,"./pages/decont.html",context={
+    }
+    )  
