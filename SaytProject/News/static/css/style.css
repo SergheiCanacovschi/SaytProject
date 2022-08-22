@@ -260,7 +260,6 @@ h5{
   font-size: 25px;
   text-align: center;
 }
-
 .col-sm-12 a{
   margin-left: 20px;
 }
@@ -270,27 +269,5 @@ h5{
   margin-right: auto;
 }
 .zagolovok h1{
-  font-size: 40px;
-  font-weight: 600;
-  margin-bottom: -10px;
-  padding: 10px;
-}
-
-.col-sm-6 p, h4{
-  padding: 20px;
-  text-align: center;
-  
-}
-h6 {
-  text-align: center;
-  margin-top: -20px;
-  color: #727b84;
-
-}
-.card{
-  margin:30px;
-  border: 2px solid black;
-  border-radius: 20px;
-  box-shadow: rgb(55, 52, 52) 3px 3px;
-   
+  font-size: 60px;
 }
