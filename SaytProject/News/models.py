@@ -43,7 +43,7 @@ class Document(models.Model):
     summary = models.TextField(max_length=10000,
                                help_text="Описание Документа", verbose_name="Описание ")
     file = models.FileField(null=True, blank=True,
-                               verbose_name="Вы можете прикрепить файл")
+                               verbose_name="Вы можете прикрепить файл") 
 
 
 
