@@ -250,20 +250,20 @@ form {
       background-color: rgb(220, 86, 86);
       border-radius: 15px;
       color: white;
-      display: inline-block;
-      
+      display: inline-block;   
       text-decoration: none;
       margin-top: 20px;
-      
     }
       
 h5{
   margin-top: 20px;
   font-size: 25px;
   text-align: center;
-
 }
 
 .col-sm-12 a{
   margin-left: 20px;
+}
+.table{
+  margin-left: 0;
 }
