@@ -44,3 +44,9 @@ def decont(request):
     return render(request,"./pages/decont.html",context={
     }
     )  
+
+def covid(request):
+
+    return render(request,"./pages/covid.html",context={
+    }
+    )  

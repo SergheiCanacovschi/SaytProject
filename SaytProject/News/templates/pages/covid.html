@@ -1,0 +1,51 @@
+{% extends "base_generic1.html" %}
+
+{% block content %}
+<div class="fon">
+    <h1>Что такое Коронавирус?</h1>
+    <p>Коронавирус — входит в семейство вирусов, приводящих к заболеванию органов дыхания.<br> Чаще всего — без тяжёлых симптомов. Мировую пандемию вызвал SARS‑CoV‑2,  впервые был обнаруженный в Китае в конце декабря.</p>
+    <h1>Симптомы COVID-19</h1>
+    <div class="col-sm-5">
+    
+<button class="accordion"><b>ЧАСТО НАБЛЮДАЕМЫЕ СИМПТОМЫ:</b></button>
+<div class="panel">
+ <p> 
+    &#9675;&nbspповышение температуры;<br>
+    &#9675;&nbspкашель;<br>
+    &#9675;&nbspутомляемость;<br>
+    &#9675;&nbspпотеря обоняния и вкусовых ощущений.<br>
+  </p>
+</div>
+
+<button class="accordion"><b>У НЕКОТОРЫХ ИНФИЦИРОВАННЫХ МОГУТ ТАКЖЕ НАБЛЮДАТЬСЯ:</b></button>
+<div class="panel">
+  <p>&#9675;&nbspболь в горле;<br>
+    &#9675;&nbspголовная боль;<br>
+    &#9675;&nbspразличные другие болевые ощущения;<br>
+    &#9675;&nbspдиарея;<br>
+    &#9675;&nbspсыпь на коже или изменение цвета кожи на пальцах рук или ног;<br>
+    &#9675;&nbspпокраснение или раздражение глаз.<br></p>
+</div>
+
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+</div>
+</div>
+<script>var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight){
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }</script>
+
+{% endblock %}
