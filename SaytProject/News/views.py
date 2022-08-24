@@ -54,9 +54,3 @@ def covid(request):
     return render(request,"./pages/covid.html",context={
     }
     )  
-
-def pred(request):
-
-    return render(request,"./pages/pred.html",context={
-    }
-    )  
