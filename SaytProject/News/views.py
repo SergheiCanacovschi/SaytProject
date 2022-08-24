@@ -64,3 +64,13 @@ def decent(request):
     return render(request,"./pages/decent.html",context={
     }
     ) 
+def secret(request):
+
+    return render(request,"./pages/secret.html",context={
+    }
+    ) 
+def sovet(request):
+
+    return render(request,"./pages/sovet.html",context={
+    }
+    ) 
