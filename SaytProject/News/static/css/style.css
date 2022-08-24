@@ -356,13 +356,15 @@ h5{
 }
 .col-sm-5{
   margin-left: auto;
-  margin-right: auto;}
- .fon{ 
+  margin-right: auto;
+width: 65%;}
   
-  background-image:  url(../images/COVID.jpg); /* Фоновый цвет и фоновый рисунок*/
+ .fon{ 
+    background-image:  url(../images/COVID.jpg); /* Фоновый цвет и фоновый рисунок*/
   color: #fff; /*Цвет текста на странице*/
   background-attachment: fixed; /* Фон страницы фиксируется */
-  background-repeat: cover; /* Изображение повторяется по горизонтали */ 
+  background-repeat: no-repeat; 
+  background-size: cover;
  
 }
 .fon p{
@@ -371,4 +373,9 @@ h5{
   background: #ccc;
   border-radius: 20px;
   width: 70%;
+  margin-left: auto;
+  margin-right: auto;
   }
+.container1 p{
+  text-align: center;
+}
