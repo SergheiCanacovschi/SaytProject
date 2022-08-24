@@ -18,9 +18,13 @@ from django.views import generic
 def index(request):
     num_document = Document.objects.all().count()
     num_novosti = Novosti.objects.all().count()
+    title=Novosti.objects.last
+    file=Novosti.objects.last
     return render(request,"index.html",context={
     'num_document':num_document,
     'num_novosti':num_novosti,
+    'title':title,
+    'file':file,
     }
                  )
 
@@ -42,5 +46,11 @@ def prim(request):
 def decont(request):
 
     return render(request,"./pages/decont.html",context={
+    }
+    )  
+
+def covid(request):
+
+    return render(request,"./pages/covid.html",context={
     }
     )  
