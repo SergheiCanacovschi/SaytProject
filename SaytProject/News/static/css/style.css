@@ -247,13 +247,12 @@ form {
                width:20%;
                       }
              .btn  {
-      background-color: rgb(220, 86, 86);
       border-radius: 15px;
       color: white;
       display: inline-block;   
       text-decoration: none;
       margin-top: 20px;
-    }
+          }
       
 h5{
   margin-top: 20px;
