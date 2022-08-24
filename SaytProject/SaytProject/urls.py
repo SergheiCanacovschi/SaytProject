@@ -30,6 +30,7 @@ urlpatterns = [
     path('decont',views.decont, name='decont'),
     path('covid',views.covid, name='covid'),
     path('decent',views.decent, name='decent'),
+    path('pred',views.pred, name='pred'),
  #   re_path(r'^books/$', views.BookListView.as_view(), name='document'),
  #   re_path(r'^book/(?P<pk>\d+)$', views.BookDetailView.as_view(), name='doc-detail'),
 ]
