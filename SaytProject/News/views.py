@@ -54,3 +54,8 @@ def covid(request):
     return render(request,"./pages/covid.html",context={
     }
     )  
+def decent(request):
+
+    return render(request,"./pages/decent.html",context={
+    }
+    )
