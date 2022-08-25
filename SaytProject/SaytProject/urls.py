@@ -33,6 +33,7 @@ urlpatterns = [
     path('pred',views.pred, name='pred'),
     path('secret',views.secret, name='secret'),
     path('sovet',views.sovet, name='sovet'),
+    path('contacti',views.contacti, name='contacti'),
  #   re_path(r'^summary/$', views.BookListView.as_view(), name='document'),
  #   re_path(r'^book/(?P<pk>\d+)$', views.BookDetailView.as_view(), name='doc-detail'),
 ]

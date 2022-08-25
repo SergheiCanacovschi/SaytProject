@@ -70,3 +70,8 @@ def sovet(request):
     return render(request,"./pages/sovet.html",context={
     }
     ) 
+def contacti(request):
+
+    return render(request,"./pages/contacti.html",context={
+    }
+    ) 
