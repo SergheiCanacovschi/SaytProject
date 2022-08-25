@@ -421,3 +421,9 @@ width: 65%;}
   .pred{
     margin-left: 50px;
   }
+.linia{
+  border-top: 8px dotted green;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
