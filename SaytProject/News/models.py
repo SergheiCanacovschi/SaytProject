@@ -17,14 +17,12 @@ class Novosti(models.Model):
                               help_text="Введите заголовок Новостей",
                               verbose_name="Заголовок Новостей")
      summary = models.TextField(max_length=10000,
-                                help_text="Описание Новостей", verbose_name="Описание ")
+                                help_text="Описание Новостей", 
+                                verbose_name="Описание ")
      file = models.FileField(null=True, blank=True,
                                verbose_name="Вы можете прикрепить файл")
      image = models.ImageField(null=True, blank=True,
                                verbose_name="Вы можете прикрепить фото") 
-
-                               
-
 
      def __str__(self):
          return self.title
@@ -41,7 +39,6 @@ class Document(models.Model):
     last_name = models.CharField(max_length=50,
                             help_text="Введите атвора публикаций",
                             verbose_name="Автор Публикаций")
-
     title = models.CharField(max_length=75,
                              help_text="Введите заголовок Документа",
                              verbose_name="Заголовок Документа")
@@ -51,7 +48,6 @@ class Document(models.Model):
                                verbose_name="Вы можете прикрепить файл")    
     image = models.ImageField(null=True, blank=True,
                                verbose_name="Вы можете прикрепить фото")
-
 
 
     def __str__(self):
