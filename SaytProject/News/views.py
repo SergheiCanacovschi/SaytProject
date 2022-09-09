@@ -17,9 +17,8 @@ from django.views import generic
 
 def index(request):
     
-    
-    file=Novosti.objects.last
-    return render(request,"index.html",context={
+    summary = Novosti.objects.all()
+    return render(request,"index.html", context={'summary': summary
    
     }
                  )
