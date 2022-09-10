@@ -34,9 +34,15 @@ urlpatterns = [
     path('secret',views.secret, name='secret'),
     path('sovet',views.sovet, name='sovet'),
     path('contacti',views.contacti, name='contacti'),
+    
+
+]
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    
  #   re_path(r'^summary/$', views.BookListView.as_view(), name='document'),
  #   re_path(r'^book/(?P<pk>\d+)$', views.BookDetailView.as_view(), name='doc-detail'),
-]
+
 
 
 

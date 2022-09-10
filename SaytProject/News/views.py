@@ -13,12 +13,13 @@ from .models import *
 from django.views import generic
 
 
+
 # Create your views here.
 
 def index(request):
-    
-    summary = Novosti.objects.all()
-    return render(request,"index.html", context={'summary': summary
+   
+    summary = Novosti.objects.order_by('-id')
+    return render(request,"index.html", context={'summary': summary 
    
     }
                  )
@@ -74,3 +75,5 @@ def contacti(request):
     return render(request,"./pages/contacti.html",context={
     }
     ) 
+
+ 

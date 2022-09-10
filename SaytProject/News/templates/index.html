@@ -1,11 +1,18 @@
 {% extends "base_generic1.html" %}
 
 {% block content %}
-<h1>{{ Novosti.title }}</h1>
-  <img src="{{ Novosti.img.url }}">
-  <content>{{ Novosti.context }}
+
+{% for el in summary %}
+
+<h1>{{ el.title }}</h1>
+  
+ {{ el.summary }}
  
-<h1>{{summary}}</h1>
+<img src= "{{ el.image }}" >
+ 
 
 
+{% endfor %}
 {% endblock %} 
+
+<h1>{{summary}}</h1>
