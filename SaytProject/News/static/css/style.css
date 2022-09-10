@@ -606,3 +606,11 @@ textarea:hover {
 #submit:hover {
   color: #e2dedb;
 } 
+.search{
+  width: 60%;
+  height: 50px;
+}
+.submit{
+  width: 20%;
+  height:50px;
+}
