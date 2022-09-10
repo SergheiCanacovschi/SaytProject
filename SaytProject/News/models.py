@@ -46,9 +46,12 @@ class Document(models.Model):
                                help_text="Описание Документа", verbose_name="Описание ")
     file = models.FileField(null=True, blank=True,
                                verbose_name="Вы можете прикрепить файл")    
-    image = models.ImageField(null=True, blank=True,
+    image = models.ImageField(null=True, blank=True, upload_to='static/images',
                                verbose_name="Вы можете прикрепить фото")
 
+class Images(models.Model):
+    model_img = models.ImageField(upload_to='static/images')
 
     def __str__(self):
         return '%s %s' % (self.data, self.title)
+
