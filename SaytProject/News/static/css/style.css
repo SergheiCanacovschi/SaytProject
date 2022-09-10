@@ -440,7 +440,15 @@ width: 65%;}
   font-size: 20px;
 }
 
+/*Советники*/
+.col-sm-4 {
+  text-align: center;
+  padding: 20px;
+}
 
+.col-sm-4 img{
+  text-align: center;
+}
 
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
 
