@@ -1,0 +1,92 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1><b>Советники района Тараклия</b></h1><br>
+<div class="col-sm-5">
+    
+    <button class="accordion"><b>ПО ОБРАЗОВАНИЮ, ЗДРАВООХРАНЕНИЮ, КУЛЬТУРЕ, МОЛОДЕЖИ, СПОРТУ, СОЦИАЛЬНОМУ ОБЕСПЕЧЕНИЮ, ЗАНЯТОСТИ НАСЕЛЕНИЯ И МИГРАЦИИ, В СОСТАВЕ:</b></button>
+    <div class="panel">
+     <p> 
+        <ol><li>Мунтян Галина- председатель</li>
+            <li>  Георгиев Иван </li>
+            <li> Татарлы Александр </li>
+            <li> Пирняк Инга </li>
+            <li> Градинар Мария</li>
+            <li> Димитриева Федора </li>
+            <li>Сабий Федор</li> </ol>
+      </p>
+    </div>
+    </div><br>
+    <div class="col-sm-5">
+    <button class="accordion"><b>ПО БЮДЖЕТУ И ФИНАНСАМ, В СОСТАВЕ:</b></button>
+    <div class="panel">
+     <p> 
+        <ol><li>Морарь Василий – председатель</li>
+            <li>  Татарлы Александр</li>
+            <li> Заврак Степан </li>
+            <li> Берова Мария </li>
+            <li> Чернев Виктор</li>
+            <li> Зибили Елена </li>
+            <li>Кунев Вячеслав</li> </ol>
+      </p>
+    </div>
+    </div><br>
+    <div class="col-sm-5">
+    <button class="accordion"><b>ПО ПРОМЫШЛЕННОСТИ, СТРОИТЕЛЬСТВУ, ТРАНСПОРТУ, СВЯЗИ И КОММУНАЛЬНОМУ ХОЗЯЙСТВУ, В СОСТАВЕ:</b></button>
+    <div class="panel">
+     <p> 
+        <ol><li>Камбур Вячеслав</li>
+            <li>  Кара Демьян</li>
+            <li> Кайряк Руслан </li>
+            <li> Виткова Валерия </li>
+            <li> Дериволков Василий</li>
+            <li> Душков Дмитрий </li>
+            <li>Питрапов Владимир</li> </ol>
+      </p>
+    </div>
+    </div><br>
+    <div class="col-sm-5">
+    <button class="accordion"><b>ПО СЕЛЬСКОМУ ХОЗЯЙСТВУ, ПЕРЕРАБАТЫВАЮЩЕЙ ПРОМЫШЛЕННОСТИ И ПРОДОВОЛЬСТВИЮ, ЭКОЛОГИИ И ИСПОЛЬЗОВАНИЮ ПРИРОДНЫХ РЕСУРСОВ, ЗЕМЛЕУСТРОЙСТВА И КАДАСТРА, В СОСТАВЕ:</b></button>
+    <div class="panel">
+     <p> 
+        <ol><li>Кара Демьян</li>
+            <li>  Дериволков Василий</li>
+            <li> Заврак Степан </li>
+            <li> Нереуца Георгий </li>
+            <li> Мостовой Николай</li>
+            <li> Виткова Валерия </li>
+            <li>Цолов Степан </li> </ol>
+      </p>
+    </div>
+    </div><br>
+    <div class="col-sm-5">
+        <button class="accordion"><b>ПО ЭКОНОМИКЕ, ИНВЕСТИЦИЯМ, РЕФОРМАМ, МАЛОМУ И СРЕДНЕМУ БИЗНЕСУ, РЕГИОНАЛЬНОМУ РАЗВИТИЮ И ПРАВОВОЙ ДИСЦИПЛИНЕ, В СОСТАВЕ:</b></button>
+        <div class="panel">
+         <p> 
+            <ol><li>Чернев Виктор – председатель</li>
+                <li> Кайряк Руслан</li>
+                <li> Градинар Мария</li>
+                <li> Мунтян Галина </li>
+                <li> Пирняк Инга</li>
+                <li> Зибили Елена </li>
+                <li>Кунев Вячеслав </li> </ol>
+          </p>
+        </div>
+        </div>
+
+    <script>var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }</script>
+
+{% endblock %} 

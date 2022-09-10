@@ -1,3 +1,4 @@
+from email.mime import image
 from django.shortcuts import render
 from django.http import HttpResponse
 
@@ -19,7 +20,7 @@ from django.views import generic
 def index(request):
    
     summary = Novosti.objects.order_by('-id')
-    return render(request,"index.html", context={'summary': summary 
+    return render(request,"index.html", context={'summary': summary,
    
     }
                  )
@@ -75,5 +76,10 @@ def contacti(request):
     return render(request,"./pages/contacti.html",context={
     }
     ) 
+def speccom(request):
+
+    return render(request,"./pages/speccom.html",context={
+    }
+    )
 
  
