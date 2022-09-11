@@ -36,7 +36,9 @@ urlpatterns = [
     path('contacti',views.contacti, name='contacti'),
     path('speccom',views.speccom, name='speccom'),
     path('rasp',views.rasp, name='rasp'),
-    
+    path('ruc',views.ruc, name='ruc'),
+    path('apar',views.apar, name='apar'),
+
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

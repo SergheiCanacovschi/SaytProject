@@ -450,6 +450,23 @@ width: 65%;}
   text-align: center;
 }
 
+/*Контакты*/
+.contacti p{
+  border: solid 2px rgb(73, 150, 73);
+  border-radius: 20px;
+  box-shadow: #28392f 2px 3px;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(73, 150, 73);
+  color: white;
+  font-size: 20px;
+
+}
+
+
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
@@ -621,4 +638,10 @@ textarea:hover {
 .submit{
   width: 20%;
   height:50px;
+}
+.map{
+    width: 25%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
