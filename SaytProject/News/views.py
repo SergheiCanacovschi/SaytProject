@@ -82,4 +82,15 @@ def speccom(request):
     }
     )
 
+def ruc(request):
+
+    return render(request,"./pages/ruc.html",context={
+    }
+    )
+
+def apar(request):
+
+    return render(request,"./pages/apar.html",context={
+    }
+    )
  

@@ -34,7 +34,9 @@ urlpatterns = [
     path('secret',views.secret, name='secret'),
     path('sovet',views.sovet, name='sovet'),
     path('contacti',views.contacti, name='contacti'),
-     path('speccom',views.speccom, name='speccom'),
+    path('speccom',views.speccom, name='speccom'),
+    path('ruc',views.ruc, name='ruc'),
+    path('apar',views.apar, name='apar'),
 
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
