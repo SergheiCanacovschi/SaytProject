@@ -1,0 +1,32 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1><b>РАСПОРЯЖЕНИЯ</b></h1><br>
+<div class="col-sm-5">
+    
+    <button class="accordion"><b>ПО ОБРАЗОВАНИЮ, ЗДРАВООХРАНЕНИЮ, КУЛЬТУРЕ, МОЛОДЕЖИ, СПОРТУ, СОЦИАЛЬНОМУ ОБЕСПЕЧЕНИЮ, ЗАНЯТОСТИ НАСЕЛЕНИЯ И МИГРАЦИИ, В СОСТАВЕ:</b></button>
+    <div class="panel">
+        {% for el in title %}
+
+        <a href="{{el.file}}"target="_blank">{{el.title }}<br></a>
+        {% endfor %}
+    </div>
+    </div>
+
+    <script>var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }</script>
+ 
+ 
+{% endblock %} 

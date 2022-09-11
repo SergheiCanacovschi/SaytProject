@@ -81,5 +81,9 @@ def speccom(request):
     return render(request,"./pages/speccom.html",context={
     }
     )
-
- 
+def rasp(request):
+    title = Document.objects.order_by('-id')
+    return render(request,"./pages/rasp.html", context={'title': title,
+   
+    }
+                 )
