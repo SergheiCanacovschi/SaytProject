@@ -1,18 +1,19 @@
-{% extends "base_generic1.html" %}
+{% extends "base_generic.html" %}
 
 {% block content %}
 
 {% for el in summary %}
-
+<div class="col-sm-6">
+<img src= "{{ el.image.url }}">
 <h1>{{ el.title }}</h1>
   
  {{ el.summary }}
  
-<img src= "{{ el.image }}" >
+
  
 
 
 {% endfor %}
+</div>
 {% endblock %} 
 
-<h1>{{summary}}</h1>

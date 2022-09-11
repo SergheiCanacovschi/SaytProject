@@ -645,3 +645,6 @@ textarea:hover {
     margin-left: auto;
     margin-right: auto;
 }
+.col-sm-6 img{
+  width: 100%;
+}
