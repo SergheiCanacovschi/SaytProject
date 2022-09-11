@@ -38,6 +38,7 @@ urlpatterns = [
     path('rasp',views.rasp, name='rasp'),
     path('ruc',views.ruc, name='ruc'),
     path('apar',views.apar, name='apar'),
+    path('resh',views.resh, name='resh'),
 
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
