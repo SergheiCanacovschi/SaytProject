@@ -18,7 +18,7 @@ from django.urls import path, re_path
 from News import views
 from django.conf.urls.static import static
 from django.conf import settings
-
+import os
 
 
 urlpatterns = [
@@ -35,14 +35,19 @@ urlpatterns = [
     path('sovet',views.sovet, name='sovet'),
     path('contacti',views.contacti, name='contacti'),
     path('speccom',views.speccom, name='speccom'),
+    path('rasp',views.rasp, name='rasp'),
     path('ruc',views.ruc, name='ruc'),
     path('apar',views.apar, name='apar'),
 
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-    
- #   re_path(r'^summary/$', views.BookListView.as_view(), name='document'),
+
+   
+
+
+
+   
  #   re_path(r'^book/(?P<pk>\d+)$', views.BookDetailView.as_view(), name='doc-detail'),
 
 

@@ -21,7 +21,7 @@ class Novosti(models.Model):
                                 verbose_name="Описание ")
      file = models.FileField(null=True, blank=True,
                                verbose_name="Вы можете прикрепить файл")
-     image = models.ImageField(null=True, blank=True,
+     image = models.ImageField(null=True, blank=True,upload_to='static/images',
                                verbose_name="Вы можете прикрепить фото") 
 
      def __str__(self):
@@ -39,18 +39,15 @@ class Document(models.Model):
     last_name = models.CharField(max_length=50,
                             help_text="Введите атвора публикаций",
                             verbose_name="Автор Публикаций")
-    title = models.CharField(max_length=75,
+    title = models.CharField(max_length=150,
                              help_text="Введите заголовок Документа",
                              verbose_name="Заголовок Документа")
     summary = models.TextField(max_length=10000,
                                help_text="Описание Документа", verbose_name="Описание ")
-    file = models.FileField(null=True, blank=True,
+    file = models.FileField(null=True, blank=True, upload_to='images/static/images',
                                verbose_name="Вы можете прикрепить файл")    
     image = models.ImageField(null=True, blank=True, upload_to='static/images',
                                verbose_name="Вы можете прикрепить фото")
-
-class Images(models.Model):
-    model_img = models.ImageField(upload_to='static/images')
 
     def __str__(self):
         return '%s %s' % (self.data, self.title)
