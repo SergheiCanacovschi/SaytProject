@@ -21,7 +21,7 @@ class Novosti(models.Model):
                                 verbose_name="Описание ")
      file = models.FileField(null=True, blank=True,
                                verbose_name="Вы можете прикрепить файл")
-     image = models.ImageField(null=True, blank=True,upload_to='SaytProject/SaytProject/SaytProject/image/',
+     image = models.ImageField(null=True, blank=True,upload_to='image/',
                                verbose_name="Вы можете прикрепить фото") 
 
      def __str__(self):
