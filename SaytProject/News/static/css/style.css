@@ -345,7 +345,7 @@ h5{
 .accordion:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
   font-size: 13px;
-  color: #777;
+  color: rgb(119, 119, 119);
   float: right;
   margin-left: 5px;
 }
@@ -644,4 +644,7 @@ textarea:hover {
     display: flex;
     margin-left: auto;
     margin-right: auto;
+}
+.col-sm-6 img{
+  width: 100%;
 }

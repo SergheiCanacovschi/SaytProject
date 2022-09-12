@@ -82,7 +82,7 @@ def speccom(request):
     }
     )
 def rasp(request):
-    title = Document.objects.order_by('-id')
+    title = Rasporejenia.objects.order_by('-id')
     return render(request,"./pages/rasp.html", context={'title': title,
    
     }
@@ -99,4 +99,21 @@ def apar(request):
     return render(request,"./pages/apar.html",context={
     }
     )
+
+def resh(request):
+
+    return render(request,"./pages/resh.html",context={
+    }
+    )
  
+def kcs(request):
+    title = KCS.objects.order_by('-id')
+    return render(request,"./pages/kcs.html",context={ 'title': title,
+    }
+    )
+
+def gosz(request):
+    title = Zakupki.objects.order_by('-id')
+    return render(request,"./pages/gosz.html",context={ 'title': title,
+    }
+    )

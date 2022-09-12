@@ -4,4 +4,6 @@ from .models import *
 # Register your models here.
 
 admin.site.register(Novosti)
-admin.site.register(Document)
+admin.site.register(Rasporejenia)
+admin.site.register(KCS)
+admin.site.register(Zakupki)
