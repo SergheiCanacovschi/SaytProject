@@ -6,3 +6,4 @@ from .models import *
 admin.site.register(Novosti)
 admin.site.register(Rasporejenia)
 admin.site.register(KCS)
+admin.site.register(Zakupki)

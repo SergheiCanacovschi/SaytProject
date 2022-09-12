@@ -101,8 +101,19 @@ def apar(request):
     )
 
 def resh(request):
-    title = KCS.objects.order_by('-id')
+
     return render(request,"./pages/resh.html",context={
     }
     )
  
+def kcs(request):
+    title = KCS.objects.order_by('-id')
+    return render(request,"./pages/kcs.html",context={ 'title': title,
+    }
+    )
+
+def gosz(request):
+    title = Zakupki.objects.order_by('-id')
+    return render(request,"./pages/gosz.html",context={ 'title': title,
+    }
+    )
