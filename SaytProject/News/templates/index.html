@@ -6,11 +6,17 @@
 <div class="col-sm-6">
 <img src= "{{el.image.url}}">
 <h3>{{ el.title }}</h3><br>
- <div class="pers">&#9997Автор:&nbsp&nbsp{{ el.persona }}&nbsp&nbsp&nbsp&nbsp	&#9200;{{ el.data }}</div>
+&#9997Автор:&nbsp&nbsp{{ el.persona }}&nbsp&nbsp&nbsp&nbsp	&#9200;{{ el.data }}
   <br>
- {{ el.summary }}
+  <div class="tex">{{ el.summary }}</div>
  
-
+ <script>
+    $(document).ready(function(){
+    $('.tex').text($('.tex').text().replace(/(\n|\r|\f)/g, ' '));
+    $('.tex').html($('.tex').text().replace(/(.{200}).{0,}/, '$1... <a href="/">Подробнее</a>'));
+    });
+    </script>
+   
  
 
 
