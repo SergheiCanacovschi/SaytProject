@@ -1,0 +1,18 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+{% for el in summary %}
+
+<img src= "{{el.image.url}}"width=75%>
+<h3>{{ el.title }}</h3><br>
+&#9997Автор:&nbsp&nbsp{{ el.persona }}&nbsp&nbsp&nbsp&nbsp	&#9200;{{ el.data }}
+  <br>
+  {{ el.summary }} 
+ <br><br>
+    
+ 
+
+
+{% endfor %}
+{% endblock %} 

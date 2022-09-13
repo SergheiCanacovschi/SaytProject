@@ -1,26 +1,27 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
+<div class="row">
 
+  
 {% for el in summary %}
-<div class="col-sm-6">
-<img src= "{{el.image.url}}">
+<div class="col-sm-6" >
+ 
+<div class="kar">
+<img src= "{{el.image.url}}"></div>
 <h3>{{ el.title }}</h3><br>
 &#9997Автор:&nbsp&nbsp{{ el.persona }}&nbsp&nbsp&nbsp&nbsp	&#9200;{{ el.data }}
   <br>
-  <div class="tex">{{ el.summary }}</div>
+  
+  <div class="qqq"> {{ el.summary }}</div> <a href="nov">Подробнее</a><br><br>
  
- <script>
-    $(document).ready(function(){
-    $('.tex').text($('.tex').text().replace(/(\n|\r|\f)/g, ' '));
-    $('.tex').html($('.tex').text().replace(/(.{200}).{0,}/, '$1... <a href="/">Подробнее</a>'));
-    });
-    </script>
     
- 
+</div>
 
 
 {% endfor %}
-</div>
+
+</div><br><br><br><br>
+
 {% endblock %} 
 

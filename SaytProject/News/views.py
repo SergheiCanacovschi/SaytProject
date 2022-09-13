@@ -117,3 +117,11 @@ def gosz(request):
     return render(request,"./pages/gosz.html",context={ 'title': title,
     }
     )
+
+def nov(request):
+   
+    summary = Novosti.objects.order_by('-id')
+    return render(request,"./pages/nov.html", context={'summary': summary,
+   
+    }
+    )

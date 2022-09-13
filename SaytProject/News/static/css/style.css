@@ -1,3 +1,5 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
 .golova img{
   display: block;
   margin-left: auto;
@@ -739,7 +741,7 @@ input {
   font-size: 0.875em;
   width: 470px;
   height: 50px;
-  padding: 0px 15px 0px 15px;
+  
   
   background: transparent;
   outline: none;
@@ -823,3 +825,33 @@ textarea:hover {
 .col-sm-6 img{
   width: 100%;
 }
+.kar img{
+  width: 75%;
+}
+.tex{
+  margin-bottom: 15px;
+}
+
+.qqq {
+-ms-text-overflow: ellipsis;
+text-overflow: ellipsis;
+overflow: hidden;
+-ms-line-clamp: 2;
+-webkit-line-clamp: 2;
+line-clamp: 2;
+display: -webkit-box;
+display: box;
+word-wrap: break-word;
+-webkit-box-orient: vertical;
+box-orient: vertical;
+font-size: 16px;
+line-height: 19px;
+margin-bottom: 15px;
+margin-right: 5px;
+}
+
+
+
+
+
+

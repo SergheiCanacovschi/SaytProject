@@ -48,23 +48,23 @@
           <li><a class="nav-link.active" href="pred">Председатель</a></li>
           <li><a class="nav-link.active" href="secret">Секретарь</a></li>
           <li><a class="nav-link.active" href="sovet">Советники района</a></li>
-          <li><a class="nav-link.active" href="#">Специализированные комисии</a></li>
+          <li><a class="nav-link.active" href="speccom">Специализированные комисии</a></li>
       </ul>
   </li>
   <li class="nav-item"><a class="nav-link.active" href="#">Администрация</a>
       <ul class="navbar-nav">
-          <li><a class="nav-link.active" href="#">Руководство</a></li>
-          <li><a class="nav-link.active" href="#">Аппарат председателя</a></li>
+          <li><a class="nav-link.active" href="ruc">Руководство</a></li>
+          <li><a class="nav-link.active" href="apar">Аппарат председателя</a></li>
           <li><a class="nav-link.active" href="decent">Децентрализованные службы</a></li>
           <li><a class="nav-link.active" href="decont">Деконцентрированные службы</a></li>
       </ul>
   </li>
   <li class="nav-item"><a class="nav-link.active" href="#">Документы</a>
       <ul class="navbar-nav">
-          <li><a class="nav-link.active" href="#">Распоряжения</a></li>
-          <li> <a class="nav-link.active" href="#">Решение&nbspрайонного совета</a></li>
-          <li> <a class="nav-link.active" href="#">КЧС</a></li>
-          <li> <a class="nav-link.active" href="#">Гос. закупки</a></li>
+          <li><a class="nav-link.active" href="rasp">Распоряжения</a></li>
+          <li> <a class="nav-link.active" href="resh">Решение&nbspрайонного совета</a></li>
+          <li> <a class="nav-link.active" href="kcs">КЧС</a></li>
+          <li> <a class="nav-link.active" href="gosz">Гос. закупки</a></li>
           <li> <a class="nav-link.active" href="#">Планы и отчёты</a></li>
       </ul>
   </li>
@@ -78,7 +78,7 @@
       
           </li>
          
-</div>   
+</div>
     <button onclick="topFunction()" id="myBtn" title="Go to top">☝</button>
     <div class="col-sm-12">
         {% block content %}{% endblock %}
@@ -139,6 +139,20 @@
             <p>Районный совет Тараклия © 2022. Все права защищены</p>
         </div>
         </div>        
-    </footer>
-    
+    </footer> <script>
+    $(document).ready(function () {
+
+        $('.first-button').on('click', function () {
+      
+          $('.animated-icon1').toggleClass('open');
+        });
+        $('.second-button').on('click', function () {
+      
+          $('.animated-icon2').toggleClass('open');
+        });
+        $('.third-button').on('click', function () {
+      
+          $('.animated-icon3').toggleClass('open');
+        });
+      });</script>
 </body>
