@@ -266,7 +266,6 @@ h5{
   display: block;
   margin-left: auto;
   margin-right: auto;
-
 }
 
   .zagolovok h1{
@@ -364,7 +363,6 @@ width: 65%;}
   background-attachment: fixed; /* Фон страницы фиксируется */
   background-repeat: no-repeat; 
   background-size: cover;
- 
 }
 .fon p{
   text-align: center;
@@ -421,13 +419,7 @@ width: 65%;}
   .pred{
     margin-left: 50px;
   }
-.linia{
-  border-top: 8px dotted green;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.secr p{
+  .secr p{
   border: solid 2px rgb(73, 150, 73);
   border-radius: 10px;
   text-align: center;
@@ -463,9 +455,192 @@ width: 65%;}
   background-color: rgb(73, 150, 73);
   color: white;
   font-size: 20px;
-
 }
 
+/*modulul Contacte*/
+.contacts{
+	width: 90%;
+	margin: 10px auto;
+	height: 400px;
+	background: rgb(0, 72, 144);
+	color: white;
+	opacity: 0.97;
+  	filter: alpha(opacity=97);
+	padding:10px 20px;
+	border-radius: 10px;
+	padding: 0;
+}
+.contacts .coord {
+	float:left;
+	width: 100%;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+.contacts .map {
+	width: 100%;
+	float: right;
+	padding:0;
+}
+.contacts h2 {
+	text-align: center;
+}
+.contacts .txt {
+	padding-left: 20px;
+	padding-top:5px;
+	
+}
+.blok_coord {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.blok_coord span {
+	font-size: 1.3rem; 
+	color: rgb(227, 224, 213);
+	padding-right: 30px;
+}
+.coord .ico{
+	background-color: rgb(113,118,84);
+	padding: 5px 10px;
+	box-shadow: 5px 7px 7px 0 #DEB88a, 3px 10px 10px 5px #DEB8FA;
+	border-radius:50%;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+  margin-left: 5px;
+}
+.coord .ico1{
+	background-color: rgb(113,118,84);
+	padding: 10px 25px;
+	box-shadow: 5px 7px 7px 0 #DEB88a, 3px 10px 10px 5px #DEB8FA;
+	border-radius:50%;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+  margin-left: 5px;
+}
+.coord .blok_coord i {
+	color: white;
+}
+@media (min-width: 200px) {	
+	.contacts .coord {
+		float:left;
+		width: 40%;
+		font-size: 1.3rem;
+		font-weight: bold;
+	}
+	.contacts .map {
+		width: 50%;
+		float: right;
+		padding:0;
+	}
+	
+	.contacts h2 {
+		text-align: center;
+	}
+	.contacts .txt {
+		padding-left: 20px;
+		padding-top:5px;
+		font-size: 15px;
+			
+	}
+	.table td{
+     font-size: 20px;
+	}
+	.blok_coord {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+	.blok_coord span {
+		font-size: 2rem; 
+		color: #1a0000;
+		padding-right: 30px;
+	}
+
+	.coord .ico{
+		background-color: red;
+		padding: 10px 20px;
+		box-shadow: 5px 7px 7px 0 #DEB88a, 10px 10px 10px 5px#DEB8FA;
+		border-radius:50%;
+		opacity: 0.5;
+		filter: alpha(opacity=50);
+	}
+	.coord .ico1{
+		background-color:red;
+		padding: 10px 25px;
+		box-shadow: 5px 7px 7px 0 #DEB88a, 10px 10px 10px 5px #DEB8FA;
+		border-radius:50%;
+		opacity: 0.5;
+		filter: alpha(opacity=50);
+	}
+}
+@media (min-width: 579px) {	
+	.contacts .coord {
+		float:left;
+		width: 40%;
+		font-size: 1.3rem;
+		font-weight: bold;
+	}
+	.table td{
+		font-size: 30px;
+	   }
+	.contacts .map {
+		width: 60%;
+		float: right;
+		padding:0;
+	}
+	
+	.contacts h2 {
+		text-align: center;
+	}
+	.contacts .txt {
+		padding-left: 20px;
+		padding-top:5px;
+		font-size: 25px;
+		
+		
+	}
+	.blok_coord {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+	.blok_coord span {
+		font-size: 2rem; 
+		color: #1a0000;
+		padding-right: 30px;
+	}
+
+	.coord .ico{
+		background-color: red;
+		padding: 10px 20px;
+		box-shadow: 5px 7px 7px 0 #DEB88a, 10px 10px 10px 5px#DEB8FA;
+		border-radius:50%;
+		opacity: 0.5;
+		filter: alpha(opacity=50);
+	}
+	.coord .ico1{
+		background-color:red;
+		padding: 10px 25px;
+		box-shadow: 5px 7px 7px 0 #DEB88a, 10px 10px 10px 5px #DEB8FA;
+		border-radius:50%;
+		opacity: 0.5;
+		filter: alpha(opacity=50);
+	}
+}
+
+
+/*Аппарат*/
+hr{
+    display: block; height: 3px;
+    border: 0; border-top: 4px solid rgb(28, 82, 28);
+    margin: 1em 0; padding: 0;
+}
 
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
 
